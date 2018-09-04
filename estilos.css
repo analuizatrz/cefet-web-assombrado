@@ -102,10 +102,15 @@ main {
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: inline-block;
+  position: relative;
 }
 
 #posts-principais .post .titulo {
   text-shadow: 1px 1px black;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
 }
 
 #posts-principais .post img {
@@ -173,6 +178,14 @@ main {
   background-color: orange;
   color: white;
   text-shadow: 1px 1px black;
+}
+.tag-1:active,
+.tag-2:active,
+.tag-3:active  {
+  position:relative;
+  top:-2px;
+  left:-2px;
+  cursor: context-menu;
 }
 
 .tag-2 {
@@ -279,4 +292,7 @@ footer .texto-rodape {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  position:fixed;
+  bottom: 15px;
+  right: 15px;
 }
